@@ -149,7 +149,7 @@ impl EventLoop {
     pub(crate) fn new(
         attributes: &mut PlatformSpecificEventLoopAttributes,
     ) -> Result<Self, EventLoopError> {
-        println!("This is a test!");
+        panic!("This is a test!");
 
         let thread_id = unsafe { GetCurrentThreadId() };
 
